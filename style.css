@@ -1,7 +1,7 @@
 /* Base Reset */
 body {
   margin: 0;
-  padding-top: 120px; /* space for sticky header */
+  padding-top: 100px; /* space for sticky header */
   font-family: 'Poppins', sans-serif;
   background-color: #ffffff;
   color: #003366;
@@ -14,7 +14,7 @@ header {
   z-index: 1000;
   background-color: #ffffff;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  padding: 20px 40px;
+  padding: 15px 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -24,14 +24,14 @@ header {
 .header-left {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 15px;
 }
 .header-left img {
-  height: 80px;
+  height: 70px;
   border-radius: 4px;
 }
 .header-left h1 {
-  font-size: 2em;
+  font-size: 1.4em;
   font-weight: 700;
   margin: 0;
   text-transform: uppercase;
@@ -46,15 +46,17 @@ header {
 .desktop-nav ul {
   list-style: none;
   display: flex;
-  gap: 30px;
+  gap: 25px;
   margin: 0; padding: 0;
 }
+.desktop-nav li { position: relative; }
 .desktop-nav a {
   color: #0055aa;
   text-decoration: none;
   font-weight: 600;
-  padding: 8px 12px;
+  padding: 6px 10px;
   transition: color 0.3s ease;
+  position: relative;
 }
 .desktop-nav a::after {
   content: "";
@@ -72,12 +74,22 @@ header {
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
-    margin-left:auto;
+    margin-left: auto;
     background: none; border: none;
-    font-size: 1.8em; color: #0055aa;
+    font-size: 1.6em; color: #0055aa;
     cursor: pointer;
   }
-  .desktop-nav ul { display: none; flex-direction: column; }
+  .desktop-nav ul {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    position: absolute;   /* dropdown outside header */
+    top: 100%;            /* below header */
+    right: 0;
+    width: 220px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+  }
   .desktop-nav ul.show { display: flex; }
   .site-title { display: none; }
 }
@@ -142,21 +154,3 @@ footer {
   background-color: #003366;
   color: #fff;
 }
-
-
-@media (max-width: 768px) {
-  .desktop-nav ul {
-    display: none;
-    flex-direction: column;
-    background: #ffffff;
-    position: absolute;   /* take it out of header flow */
-    top: 100%;            /* place just below header */
-    right: 0;             /* align to right side */
-    width: 200px;         /* or 100% if you want full width */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  }
-  .desktop-nav ul.show {
-    display: flex;
-  }
-}
-
