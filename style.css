@@ -177,3 +177,35 @@ footer {
 }
 
 
+/* Mobile Navigation */
+.nav-toggle {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .nav-toggle {
+    display: block;
+    margin-left: auto;   /* ✅ forces toggle to the far right */
+    background: none;
+    border: none;
+    font-size: 1.8em;
+    color: #0055aa;
+    cursor: pointer;
+  }
+
+  .desktop-nav ul {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    position: absolute;   /* ✅ keeps header height fixed */
+    top: 100%;            /* ✅ dropdown appears below header */
+    right: 0;
+    width: 200px;         /* adjust width as needed */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    padding: 10px;
+  }
+
+  .desktop-nav ul.show {
+    display: flex;
+  }
+}
