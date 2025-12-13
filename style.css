@@ -311,3 +311,15 @@ body {
   padding-top: 120px;
 }
 
+@media (max-width: 768px){
+  .site-title{
+    display:none;
+  }
+}
+
+@media (min-width: 769px){
+  .site-title{
+    display:block;
+  }
+}
+
