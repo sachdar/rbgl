@@ -24,11 +24,10 @@ header {
 .header-left {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
   gap: 20px;
 }
 .header-left img {
-  height: 120px; /* bigger logo */
+  height: 80px;
   border-radius: 4px;
 }
 .header-left h1 {
@@ -56,7 +55,6 @@ header {
   font-weight: 600;
   padding: 8px 12px;
   transition: color 0.3s ease;
-  position: relative;
 }
 .desktop-nav a::after {
   content: "";
@@ -78,17 +76,7 @@ header {
     font-size: 1.8em; color: #0055aa;
     cursor: pointer;
   }
-  .desktop-nav ul {
-    display: none;
-    flex-direction: column;
-    background: #ffffff;
-    position: absolute;   /* dropdown outside header */
-    top: 100%;            /* below header */
-    right: 0;
-    width: 200px;         /* adjust width */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    padding: 10px;
-  }
+  .desktop-nav ul { display: none; flex-direction: column; }
   .desktop-nav ul.show { display: flex; }
   .site-title { display: none; }
 }
@@ -152,4 +140,21 @@ footer {
   padding: 20px;
   background-color: #003366;
   color: #fff;
+}
+
+
+@media (max-width: 768px) {
+  .desktop-nav ul {
+    display: none;
+    flex-direction: column;
+    background: #ffffff;
+    position: absolute;   /* take it out of header flow */
+    top: 100%;            /* place just below header */
+    right: 0;             /* align to right side */
+    width: 200px;         /* or 100% if you want full width */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .desktop-nav ul.show {
+    display: flex;
+  }
 }
