@@ -72,6 +72,7 @@ header {
 @media (max-width: 768px) {
   .nav-toggle {
     display: block;
+    margin-left:auto;
     background: none; border: none;
     font-size: 1.8em; color: #0055aa;
     cursor: pointer;
@@ -158,3 +159,4 @@ footer {
     display: flex;
   }
 }
+
