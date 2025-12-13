@@ -1,54 +1,34 @@
-// ✅ Mobile Menu Toggle (only on mobile)
+// ✅ Mobile Menu Toggle
 const navToggle = document.querySelector(".nav-toggle");
 const navMenu = document.querySelector(".desktop-nav ul");
-
-navToggle.addEventListener("click", () => {
-  navMenu.classList.toggle("show");
-});
+navToggle.addEventListener("click", () => navMenu.classList.toggle("show"));
 
 // ✅ Stats Counter Animation
 const counters = document.querySelectorAll(".stat-box");
-
+let statsAnimated = false;
 const animateCounters = () => {
   counters.forEach(counter => {
-    const target = +counter.getAttribute("data-target");
+    const target = +counter.dataset.target;
     let count = 0;
     const update = () => {
       count += Math.ceil(target / 200);
-      if (count < target) {
-        counter.innerText = "+" + count.toLocaleString();
-        requestAnimationFrame(update);
-      } else {
-        counter.innerText = "+" + target.toLocaleString();
-      }
+      counter.innerText = "+" + (count < target ? count : target).toLocaleString();
+      if (count < target) requestAnimationFrame(update);
     };
     update();
   });
 };
-
-// Trigger animation when stats section is in view
-const statsSection = document.querySelector(".stats");
-let statsAnimated = false;
-
 window.addEventListener("scroll", () => {
-  const rect = statsSection.getBoundingClientRect();
-  if (!statsAnimated && rect.top < window.innerHeight && rect.bottom >= 0) {
-    animateCounters();
-    statsAnimated = true;
+  const rect = document.querySelector(".stats").getBoundingClientRect();
+  if (!statsAnimated && rect.top < innerHeight && rect.bottom >= 0) {
+    animateCounters(); statsAnimated = true;
   }
 });
 
-// ✅ FAQ Expand/Collapse
-const faqItems = document.querySelectorAll(".faq-item");
-
-faqItems.forEach(item => {
-  const question = item.querySelector(".faq-question");
-  const answer = item.querySelector(".faq-answer");
-
-  answer.style.display = "none"; // hide by default
-
-  question.addEventListener("click", () => {
-    const isVisible = answer.style.display === "block";
-    answer.style.display = isVisible ? "none" : "block";
-  });
+// ✅ FAQ Toggle
+document.querySelectorAll(".faq-item").forEach(item => {
+  const q = item.querySelector(".faq-question");
+  const a = item.querySelector(".faq-answer");
+  a.style.display = "none";
+  q.addEventListener("click", () => a.style.display = a.style.display === "block" ? "none" : "block");
 });
