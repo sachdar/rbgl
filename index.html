@@ -1,140 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>RIND BALOCH GLOBAL LOGISTICS</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Website Under Maintenance</title>
+  <style>
+    :root {
+      --primary: #1e6fd9;   /* Logo Blue */
+      --secondary: #0f4fa8; /* Dark Logo Blue */
+      --dark: #0b1f3a;
+      --light: #f4f8ff;
+      --muted: #5f6f86;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--secondary), var(--primary));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--dark);
+    }
+
+    .maintenance-wrapper {
+      background: var(--light);
+      max-width: 600px;
+      width: 90%;
+      padding: 50px 40px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    }
+
+    .logo {
+      margin-bottom: 25px;
+    }
+
+    .logo img {
+      max-width: 220px;
+      width: 100%;
+      height: auto;
+      padding: 14px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 10px 25px rgba(15, 79, 168, 0.25);
+    }
+
+    h1 {
+      font-size: 36px;
+      margin-bottom: 15px;
+      color: var(--dark);
+    }
+
+    p {
+      font-size: 16px;
+      color: var(--muted);
+      line-height: 1.6;
+      margin-bottom: 30px;
+    }
+
+    .divider {
+      width: 80px;
+      height: 4px;
+      background: var(--primary);
+      margin: 0 auto 30px;
+      border-radius: 10px;
+    }
+
+    .contact {
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .contact a {
+      color: var(--secondary);
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .contact a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 480px) {
+      h1 {
+        font-size: 28px;
+      }
+
+      .maintenance-wrapper {
+        padding: 40px 25px;
+      }
+    }
+  </style>
 </head>
 <body>
-  <!-- Header -->
-<header>
-  <div class="header-left">
-    <a href="index.html">
-      <img src="logo.png" alt="RBGL Logo">
-      <h1 class="site-title">RIND BALOCH GLOBAL LOGISTICS</h1>
-    </a>
+  <div class="maintenance-wrapper">
+    <div class="logo"><img src="logo.png" alt="Rind Baloch Global Logistics Logo"></div>
+    <h1>We’re Under Maintenance</h1>
+    <div class="divider"></div>
+    <p>
+      Our website is currently undergoing scheduled maintenance to improve your
+      experience. We’ll be back online shortly.
+    </p>
+    <div class="contact">
+      Need urgent assistance? Contact us at
+      <a href="mailto:info@rindbaloch.com">info@rindbaloch.com</a>
+    </div>
   </div>
-  <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
-  <nav class="desktop-nav">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li>
-        <a href="about.html">About Us ▾</a>
-        <ul class="dropdown">
-          <li><a href="vision.html">Vision & Mission</a></li>
-          <li><a href="profile.html">Company Profile</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="services.html">Services ▾</a>
-        <ul class="dropdown">
-          <li><a href="shipping.html">Shipping Services</a></li>
-          <li><a href="containers.html">Container Trading</a></li>
-          <li><a href="ocean.html">Ocean Freight & T/S</a></li>
-          <li><a href="special.html">Special Equipment & Reefer Cargo</a></li>
-        </ul>
-      </li>
-      <li><a href="career.html">Career</a></li>
-      <li><a href="contact.html">Contact Us</a></li>
-    </ul>
-  </nav>
-</header>
-
-  <!-- Hero -->
-  <section class="hero">
-    <h2>NVOCC Excellence, <span>Global Reach</span></h2>
-    <p>RBGL specializes in Dangerous Goods, Ocean Freight, T/S Services, Container Trading, TIR Carnet Trucking to CIS, and Agency & Chartering.</p>
-    <a href="#services" class="btn">Explore Services</a>
-  </section>
-
-  <!-- Services -->
-  <section id="services" class="services">
-    <h3>Our Expertise</h3>
-    <div class="service-grid">
-      <article class="service-card">
-        <img src="dangerous-goods.jpg" alt="Dangerous Goods">
-        <h4>Dangerous Goods Handling</h4>
-        <p>Expert handling of hazardous cargo with strict compliance and safety standards.</p>
-      </article>
-      <article class="service-card">
-        <img src="ocean-freight.jpg" alt="Ocean Freight">
-        <h4>Ocean Freight & T/S</h4>
-        <p>Reliable ocean freight solutions with efficient transshipment services worldwide.</p>
-      </article>
-      <article class="service-card">
-        <img src="container-trading.jpg" alt="Container Trading">
-        <h4>Container Trading</h4>
-        <p>Flexible container trading solutions to meet your logistics demands.</p>
-      </article>
-      <article class="service-card">
-        <img src="tir-trucking.jpg" alt="TIR Trucking">
-        <h4>TIR Carnet Trucking to CIS</h4>
-        <p>Secure trucking services under TIR Carnet for CIS destinations.</p>
-      </article>
-      <article class="service-card">
-        <img src="agency-chartering.jpg" alt="Agency & Chartering">
-        <h4>Agency & Chartering</h4>
-        <p>Professional agency representation and chartering services tailored to your needs.</p>
-      </article>
-    </div>
-  </section>
-
-  <!-- Commitments -->
-  <section class="commitments">
-    <h3>Our Commitment</h3>
-    <ul>
-      <li>Cost Efficient</li>
-      <li>Transparent & Collaborative</li>
-      <li>Flexible Solutions</li>
-      <li>Ownership & Accountability</li>
-      <li>Best-in-Class Experts</li>
-    </ul>
-  </section>
-
-  <!-- Stats -->
-  <section class="stats">
-    <div class="stat-box" data-target="100">+0 Clients</div>
-    <div class="stat-box" data-target="25000">+0 TEUs Transported</div>
-    <div class="stat-box" data-target="250000">+0 MT Carried</div>
-  </section>
-
-  <!-- Differentiators -->
-  <section class="differentiators">
-    <h3>What Makes Us Different?</h3>
-    <div class="diff-grid">
-      <div class="diff-card">Fast Service</div>
-      <div class="diff-card">Safe Delivery</div>
-      <div class="diff-card">24/7 Support</div>
-    </div>
-  </section>
-
-  <!-- FAQ -->
-  <section class="faq">
-    <h3>Frequently Asked Questions</h3>
-    <div class="faq-item">
-      <button class="faq-question">What does RBGL offer?</button>
-      <div class="faq-answer">We provide NVOCC services including dangerous goods, ocean freight, trucking, and chartering.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-question">Can I ship reefer cargo?</button>
-      <div class="faq-answer">Yes, RBGL handles reefer shipments with specialized care.</div>
-    </div>
-  </section>
-
-  <!-- Footer -->
-  <footer>
-    <p>&copy; 2025 RIND BALOCH GLOBAL LOGISTICS</p>
-    <p>Office 1810, The Citadel Tower, Business Bay, Dubai, UAE</p>
-    <p>📞 +92 3220087900 | ✉ info@rindbaloch.com</p>
-  </footer>
-
-  <script src="script.js"></script>
 </body>
 </html>
-
-
-
-
-
-
