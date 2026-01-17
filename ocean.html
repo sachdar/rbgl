@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Rind Baloch Global Logistics | Ocean Freight Solutions</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO Meta Tags -->
+  <meta name="keywords" content="Ocean freight, FCL, LCL, Reefer, OOG cargo, DG cargo, Karachi shipping, Pakistan logistics, RBGL">
+  <meta name="description" content="RBGL delivers premium ocean freight solutions—FCL, LCL, Reefer, OOG, and DG cargo—backed by global carrier contracts, real-time tracking, and end-to-end service.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Rind Baloch Global Logistics | Ocean Freight Solutions">
+  <meta property="og:description" content="Premium ocean freight services with global coverage, carrier contracts, and real-time tracking.">
+  <meta property="og:image" content="https://rindbaloch.com/img/og-image.jpg">
+  <meta property="og:url" content="https://rindbaloch.com/ocean.html">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Rind Baloch Global Logistics | Ocean Freight Solutions">
+  <meta name="twitter:description" content="FCL, LCL, Reefer, OOG, DG cargo—RBGL moves the world with precision.">
+  <meta name="twitter:image" content="https://rindbaloch.com/img/og-image.jpg">
+
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://rindbaloch.com/ocean.html">
+
+  <!-- Favicon -->
+  <link href="img/favicon.ico" rel="icon">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Bootstrap 4 CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Global Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Page-specific CSS -->
+  <style>
+    :root {
+      --primary: #007BFF;
+      --secondary: #00C6FF;
+      --dark: #1F1F2E;
+      --text: #555;
+      --light-bg: #fafafa;
+      --muted: #7a7a7a;
+    }
+
+    body { font-family: 'Poppins', sans-serif; color: var(--text); }
+
+    /* Headings */
+    .lux-heading {
+      font-size: 2.6rem;
+      font-weight: 700;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 1rem;
+      line-height: 1.25;
+    }
+
+    .section-title {
+      font-size: 1.7rem;
+      font-weight: 600;
+      color: var(--dark);
+      margin-bottom: 1rem;
+    }
+
+    .lux-text {
+      font-size: 1.05rem;
+      line-height: 1.8;
+      color: var(--text);
+      margin-bottom: 1rem;
+    }
+
+    /* Premium Card */
+    .card-premium {
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      padding: 40px;
+      margin-bottom: 50px;
+    }
+
+    /* Hero */
+    .hero {
+      background: url('images/ocean-banner.jpg') center/cover no-repeat;
+      position: relative;
+      height: 420px;
+      color: #fff;
+    }
+    .hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: linear-gradient(0deg, rgba(0,0,0,0.55), rgba(0,0,0,0.35));
+    }
+    .hero .container { position: relative; z-index: 1; }
+
+    /* Highlights Grid */
+    .highlight-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 24px;
+    }
+    .highlight-item {
+      background: var(--light-bg);
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 24px;
+      text-align: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .highlight-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .highlight-item img {
+      width: 56px; height: 56px; object-fit: contain; margin-bottom: 12px;
+    }
+    .highlight-item h5 {
+      font-size: 1.05rem; font-weight: 600; color: var(--dark); margin-bottom: 8px;
+    }
+    .highlight-item p {
+      font-size: 0.95rem; color: var(--muted);
+    }
+
+    /* Service Grid */
+    .service-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 24px;
+    }
+    .service-item {
+      border: 1px solid #eee;
+      border-radius: 12px;
+      padding: 24px;
+      background: #fff;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .service-item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+    }
+    .service-item h5 {
+      font-size: 1.1rem; font-weight: 600; color: var(--dark); margin-bottom: 8px;
+    }
+    .service-item p {
+      font-size: 0.95rem; color: var(--text);
+    }
+
+    /* CTA Button */
+    .premium-btn {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: #fff;
+      border: none;
+      padding: 14px 36px;
+      font-weight: 600;
+      border-radius: 50px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow: 0 6px 20px rgba(0, 123, 255, 0.3);
+      letter-spacing: 0.4px;
+    }
+    .premium-btn:hover { opacity: 0.95; transform: translateY(-3px); }
+
+    /* Utility */
+    .mt-2 { margin-top: .5rem; }
+    .mt-3 { margin-top: 1rem; }
+    .mt-4 { margin-top: 1.5rem; }
+    .mb-0 { margin-bottom: 0; }
+  </style>
+</head>
+
+<body>
+  <!-- Topbar Start -->
+  <div class="container-fluid bg-dark">
+    <div class="row py-2 px-lg-5">
+      <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+        <div class="d-inline-flex align-items-center text-white">
+          <small><i class="fa fa-envelope mr-2"></i>info@rindbaloch.com</small>
+        </div>
+      </div>
+      <div class="col-lg-6 text-center text-lg-right">
+        <div class="d-inline-flex align-items-center">
+          <a class="text-white px-2" href="#"><i class="fab fa-facebook-f"></i></a>
+          <a class="text-white px-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+          <a class="text-white px-2" href="#"><i class="fab fa-instagram"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Topbar End -->
+
+  <!-- Navbar Start -->
+  <div class="container-fluid p-0">
+    <nav class="navbar navbar-expand-lg navbar-light py-3 py-lg-0 px-lg-5" style="background-color:#ffffff;">
+      <!-- Logo -->
+      <a href="index.html" class="navbar-brand ml-lg-3 d-flex align-items-center">
+        <img src="logo.png" alt="RBGL Logo" style="height:80px; width:auto;">
+      </a>
+      <!-- Mobile Toggle -->
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <div class="navbar-nav ml-auto py-0">
+          <a href="index.html" class="nav-item nav-link">Home</a>
+          <div class="nav-item dropdown">
+            <a href="about.html" class="nav-link dropdown-toggle text-dark" data-toggle="dropdown">About Us</a>
+            <div class="dropdown-menu border-0 shadow">
+              <a href="mission.html" class="dropdown-item">Mission & Vision</a>
+              <a href="profile.html" class="dropdown-item">Company Profile</a>
+            </div>
+          </div>
+       <div class="nav-item dropdown">
+  <a href="#" class="nav-link dropdown-toggle text-dark active" data-toggle="dropdown">Services</a>
+  <div class="dropdown-menu border-0 shadow">
+    <a href="ocean.html" class="dropdown-item active">Ocean Freight</a>
+    <!--  <a href="trucking.html" class="dropdown-item">Land Freight</a>-->
+    <a href="shipping.html" class="dropdown-item">TIR Carnet</a>
+    <a href="dg-handling.html" class="dropdown-item">DG Handling</a>
+    <a href="consolidation.html" class="dropdown-item">Cargo Consolidation</a>
+    <a href="custom.html" class="dropdown-item">Custom Clearance</a>
+    <a href="oog.html" class="dropdown-item">OOG Cargo</a>
+    <a href="isotank.html" class="dropdown-item">ISO Tank Services</a>
+    <a href="container.html" class="dropdown-item">Container Trading</a>
+  </div>
+</div>
+
+          <a href="contact.html" class="nav-item nav-link text-dark">Contact Us</a>
+        </div>
+      </div>
+    </nav>
+  </div>
+  <!-- Navbar End -->
+
+ <!-- Hero Banner -->
+<div class="jumbotron jumbotron-fluid text-white" 
+     style="background:url('image/GLN.jpg') center/cover no-repeat; position:relative; height:420px;">
+  
+  <!-- Overlay -->
+  <div style="background:rgba(0,0,0,0.6); position:absolute; top:0; left:0; right:0; bottom:0;"></div>
+  
+  <!-- Content -->
+  <div class="container text-center py-5" style="position:relative; z-index:1;">
+    <h1 class="lux-heading">Ocean Freight Solutions</h1>
+    <p class="lead mb-0">
+      Global coverage, carrier partnerships, and precision logistics — from port-to-port to door-to-door.
+    </p>
+  </div>
+</div>
+
+  <!-- Ocean Freight Capabilities -->
+  <div class="container py-5">
+    <div class="card-premium">
+      <h2 class="section-title">What We Move—With Confidence</h2>
+      <p class="lux-text">
+        RBGL delivers end-to-end ocean freight services tailored to your cargo profile and timelines. 
+        Our carrier contracts, route optimization, and documentation expertise ensure reliable transit across major trade lanes.
+      </p>
+
+      <div class="service-grid mt-3">
+        <div class="service-item">
+          <h5>FCL (Full Container Load)</h5>
+          <p>Dedicated containers for high-volume shipments—optimized for transit time, cost, and routing.</p>
+        </div>
+        <div class="service-item">
+          <h5>LCL (Less than Container Load)</h5>
+          <p>Consolidated solutions for smaller volumes—secure handling, predictable schedules, and transparent pricing.</p>
+        </div>
+        <div class="service-item">
+          <h5>Reefer (Temperature-Controlled)</h5>
+          <p>Cold chain integrity for perishables—monitored temperatures, validated routes, and compliant handling.</p>
+        </div>
+        <div class="service-item">
+          <h5>OOG (Out of Gauge)</h5>
+          <p>Oversized and project cargo—engineered stowage, special equipment, and port coordination.</p>
+        </div>
+        <div class="service-item">
+          <h5>DG Cargo (Dangerous Goods)</h5>
+          <p>Certified handling across DG classes—documentation, packaging validation, and carrier approvals.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Service Highlights -->
+  <div class="container pb-5">
+    <div class="card-premium">
+      <h2 class="section-title">Why RBGL for Ocean Freight</h2>
+      <div class="highlight-grid mt-3">
+        <div class="highlight-item">
+          <h5>Global Coverage</h5>
+          <p>Access to major ports and trade lanes with reliable schedules and capacity.</p>
+        </div>
+        <div class="highlight-item">
+
+          <h5>Carrier Contracts</h5>
+          <p>Strategic partnerships with leading carriers for competitive rates and space protection.</p>
+        </div>
+        <div class="highlight-item">
+
+          <h5>Port-to-Port</h5>
+          <p>Efficient port operations with optimized transit times and documentation.</p>
+        </div>
+        <div class="highlight-item">
+
+          <h5>Real-time Tracking</h5>
+          <p>Milestone visibility and proactive updates throughout the journey.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CTA -->
+  <div class="container text-center pb-5">
+    <a href="contact.html" class="premium-btn">
+      <i class="fa fa-ship mr-2"></i> Request Ocean Freight Quote
+    </a>
+  </div>
+
+    <p></p>
+<!-- Carrier Bar Start -->
+<div class="container-fluid py-4 carrier-bar">
+  <div class="container">
+    <div class="carrier-slider">
+      <div class="carrier-track">
+        <!-- Logos repeated twice for smooth loop -->
+        <div class="carrier-item"><img src="img/img/hmm.png" alt="HMM"></div>
+        <div class="carrier-item"><img src="img/img/CMA.png" alt="CMA CGM"></div>
+        <div class="carrier-item"><img src="img/img/ocean.png" alt="ONE Line"></div>
+        <div class="carrier-item"><img src="img/img/yang ming.png" alt="Yang Ming"></div>
+        <div class="carrier-item"><img src="img/img/cosco.png" alt="COSCO"></div>
+        <div class="carrier-item"><img src="img/img/ts.png" alt="TS Lines"></div>
+        <div class="carrier-item"><img src="img/img/kmtc.png" alt="kmtc"></div>
+
+        <!-- Repeat for infinite scroll -->
+         <div class="carrier-item"><img src="img/img/hmm.png" alt="HMM"></div>
+        <div class="carrier-item"><img src="img/img/CMA.png" alt="CMA CGM"></div>
+        <div class="carrier-item"><img src="img/img/ocean.png" alt="ONE Line"></div>
+        <div class="carrier-item"><img src="img/img/yang ming.png" alt="Yang Ming"></div>
+        <div class="carrier-item"><img src="img/img/cosco.png" alt="COSCO"></div>
+        <div class="carrier-item"><img src="img/img/ts.png" alt="TS Lines"></div>
+        <div class="carrier-item"><img src="img/img/kmtc.png" alt="kmtc"></div>
+        <div class="carrier-item"><img src="img/img/hmm.png" alt="HMM"></div>
+        <div class="carrier-item"><img src="img/img/CMA.png" alt="CMA CGM"></div>
+        <div class="carrier-item"><img src="img/img/ocean.png" alt="ONE Line"></div>
+        <div class="carrier-item"><img src="img/img/yang ming.png" alt="Yang Ming"></div>
+        <div class="carrier-item"><img src="img/img/cosco.png" alt="COSCO"></div>
+        <div class="carrier-item"><img src="img/img/ts.png" alt="TS Lines"></div>
+        <div class="carrier-item"><img src="img/img/kmtc.png" alt="kmtc"></div>
+        <div class="carrier-item"><img src="img/img/hmm.png" alt="HMM"></div>
+        <div class="carrier-item"><img src="img/img/CMA.png" alt="CMA CGM"></div>
+        <div class="carrier-item"><img src="img/img/ocean.png" alt="ONE Line"></div>
+        <div class="carrier-item"><img src="img/img/yang ming.png" alt="Yang Ming"></div>
+        <div class="carrier-item"><img src="img/img/cosco.png" alt="COSCO"></div>
+        <div class="carrier-item"><img src="img/img/ts.png" alt="TS Lines"></div>
+        <div class="carrier-item"><img src="img/img/kmtc.png" alt="kmtc"></div>
+        <div class="carrier-item"><img src="img/img/hmm.png" alt="HMM"></div>
+        <div class="carrier-item"><img src="img/img/CMA.png" alt="CMA CGM"></div>
+        <div class="carrier-item"><img src="img/img/ocean.png" alt="ONE Line"></div>
+        <div class="carrier-item"><img src="img/img/yang ming.png" alt="Yang Ming"></div>
+        <div class="carrier-item"><img src="img/img/cosco.png" alt="COSCO"></div>
+        <div class="carrier-item"><img src="img/img/ts.png" alt="TS Lines"></div>
+        <div class="carrier-item"><img src="img/img/kmtc.png" alt="kmtc"></div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Carrier Bar End -->
+
+  <!-- Footer -->
+  <footer class="container-fluid bg-dark text-white mt-5 py-5 px-sm-3 px-md-5">
+    <div class="row pt-5">
+      <div class="col-lg-6 col-md-6 mb-5">
+        <h3 class="footer-heading">Get In Touch</h3>
+        <p><i class="fa fa-map-marker-alt mr-2"></i>Badar Commercial-Street 10, Karachi, Pakistan</p>
+        <p><i class="fa fa-phone-alt mr-2"></i>00923220087900</p>
+        <p><i class="fa fa-envelope mr-2"></i>info@rindbaloch.com</p>
+      </div>
+      <div class="col-lg-6 col-md-6 mb-5">
+        <h3 class="footer-heading">Quick Links</h3>
+        <div class="d-flex flex-column">
+          <a class="text-white mb-2" href="index.html"><i class="fa fa-angle-right mr-2"></i>Home</a>
+          <a class="text-white mb-2" href="about.html"><i class="fa fa-angle-right mr-2"></i>About Us</a>
+          <a class="text-white mb-2" href="service.html"><i class="fa fa-angle-right mr-2"></i>Our Services</a>
+          <a class="text-white" href="contact.html"><i class="fa fa-angle-right mr-2"></i>Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</body>
+</html>
